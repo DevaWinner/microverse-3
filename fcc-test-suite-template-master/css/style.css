@@ -7,9 +7,23 @@
     padding: 0;
     background-color: aquamarine;
 }
+
 header{
 text-align: center;
 }
+
+h1{
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+
+#description{
+    font-weight: 600;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
 #survey-form{
     margin: 20px auto;
     width: 80%;
@@ -17,18 +31,47 @@ text-align: center;
     padding: 20px;
     border: 2px solid cornflowerblue;
     background-color: cornflowerblue;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
+
+
 .form-body{
 margin-bottom: 20px;
 
 }
+
+.radio>label{
+    line-height: 10px;
+    margin-left: 20px;
+    
+    }
+
+.form-description{
+    font-weight:600;
+}
+
 label{
     display: block;
     margin-bottom: 5px;
 }
+
 input, select, textarea{
     width: 100%;
     padding: 10px;
     border: 2px solid crimson;
     border-radius: 4px;
+}
+
+button{
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 20%;
+    background-color: ;
+    padding: 10px;
+    font-weight: 600;
+    font-size: large;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
 }
