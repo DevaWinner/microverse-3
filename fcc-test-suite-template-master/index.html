@@ -9,41 +9,81 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form id="survey-form">
-      <label for="name" id="name-label">
-        Name:
-      </label>
-      <input type="text" id="name" placeholder="Enter Your Name" required>
-      <label for="email" id="email-label">
-        Email:
-      </label>
-      <input type="email" id="email" placeholder="Enter Your Email" required>
-      <label for="age" id="age-label">
-        Age:
-      </label>
-      <input type="number" id="age" name="age" min="3" max="60" placeholder="Enter Your Age" required>
-      <label for="gender" id="gender-label">
-        Gender:
-      </label>
-      <select name="gender" id="gender" required>
-        <option value="">Select an Option</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
-      </select>
-      <label>
-        <input type="radio" name="Definitely">
-      </label>
-      <label>
-        <input type="radio" name="May Be">
-      </label>
-      <Label>
-        <input type="radio" name="Not Sure">
-      </Label>
-    </form>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+
+      <form id="survey-form">
+
+        <div class="form-body">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" placeholder="Enter Your Name" required>
+        </div>
+
+        <div class="form-body">
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" placeholder="Enter Your Email" required>
+        </div>
+
+        <div class="form-body">
+          <label for="age" id="number-label">Age:</label>
+          <input type="number" id="number" name="age" min="10" max="60" placeholder="Enter Your Age" required>
+        </div>
+        
+        <div class="form-body">
+          <label for="gender" id="dropdown">Gender:</label>
+          <select name="gender" id="dropdown" required>
+          <option value="">Select an Option</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-body">
+          <p>Would you recommend us to a friend?</p>
+          <label>
+            <input type="radio" name="recommended" value="Yes I will!" checked> Yes I will!
+          </label>
+
+          <label>
+            <input type="radio" name="recommended" value="Maybe"> Maybe
+          </label>
+        
+          <label>
+            <input type="radio" name="recommended" value="Not sure"> Not sure
+          </label>
+        </div>
+
+        <div class="form-body">
+          <p>What project will you like to see us build?</p>
+          <label>
+            <input type="checkbox" name="project" value="Product Page">Product Page
+          </label>
+
+          <label>
+            <input type="checkbox" name="project" value="Shopping Page">Shopping Page
+          </label>
+
+          <label>
+            <input type="checkbox" name="project" value="Facebook">Facebook
+          </label>
+        </div>
+
+        <div class="form-body">
+          <p>What do you have to say to us?</p>
+          <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comments here please....."></textarea>
+        </div>
+
+        <div class="form-body">
+          <button type="submit" id="submit" class="submit-btn">Submit</button>
+        </div>
+
+      </form>
+    </div>
+
     <script  src="js/index.js"></script>
   </body>
 </html>
